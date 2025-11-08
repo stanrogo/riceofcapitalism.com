@@ -12,7 +12,7 @@ html, body{
 body{
 	overflow-x: hidden;
 	padding-top: 57px;
-	background: url('Images/ricepaper2.png');
+	background: url('images/ricepaper2.png');
 }
 
 *, *::before, *::after {
