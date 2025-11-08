@@ -13,7 +13,7 @@ jobs:
       - name: Deploy with rsync
         uses: burnett01/rsync-deployments@7.1.0
         with:
-          switches: --archive --verbose --compress --human-readable --progress --delete --delete-excluded
+          switches: --archive --verbose --compress --human-readable --progress --delete --delete-excluded  --exclude-from='./.rsyncignore'
           path: .
           remote_path: /home/jj125967/domains/riceofcapitalism.com/public_html/
           remote_host: ${{secrets.SSH_HOST}}
